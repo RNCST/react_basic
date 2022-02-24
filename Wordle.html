@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      input {
+         width: 55px;
+         height: 55px;
+         font-size: 45px;
+         text-align: center;
+      }
+   </style>
+</head>
+
+<body>
+   <input class="input" >
+   <input class="input" >
+   <input class="input" >
+   <input class="input" >
+   <input class="input" >
+   <button class="submit">Submit</button>
+
+   <script>
+      let today = "today";
+      let count = 0;
+
+      document.querySelector('.submit').addEventListener('click', function () {
+         //alert('clicked')
+         var input = document.querySelectorAll('.input');
+         var inputTemplate =
+            `
+            <div>
+               <input class="input" >
+               <input class="input" >
+               <input class="input" >
+               <input class="input" >
+               <input class="input" >
+            </div>
+         `;
+         if (count < 5) {
+            for (var i = 0; i < today.length; i++) {
+               if (input[i].value == today[i]) {
+                  input[i].style.background = 'green';
+               } else if (today.includes(input[i].value)) {
+                  input[i].style.background = 'yellow';
+               } else {
+                  input[i].style.background = 'wheat';
+               }
+               input[i].classList.remove('input');
+            }
+            
+            document.querySelector('body').insertAdjacentHTML('beforeend', inputTemplate)
+            count++;
+         } else {
+            alert('gameover');
+         }
+         alert(`count => `+ count);
+         // 없는것 => 알파벳 검사 , 5회차조건 , 초기화, 글자수제한
+      })
+
+
+   </script>
+</body>
+
+</html>
