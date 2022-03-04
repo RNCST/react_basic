@@ -1,6 +1,7 @@
 
 import './App.css';
-import Button from './components/Event/Event';
+import Condition from './components/ConditionalRendering/Condition'
+// import Button from './components/Event/Event';
 // import Composition from './components/Props/composition';
 // import Extraction from './components/Props/Extaction/extraction';
 // import ClassComponent from './components/State/ClassComponent';
@@ -10,7 +11,8 @@ import Button from './components/Event/Event';
 function App() {
   return (
     <div className="App">
-      <Button/>
+      <Condition />
+      {/* <Button/> */}
       {/* <ClassComponent2/> */}
       {/* <FunctionalComponent/> */}
       {/* <ClassComponent /> */}
