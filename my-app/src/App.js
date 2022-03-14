@@ -1,6 +1,7 @@
 
 import './App.css';
-import Condition from './components/ConditionalRendering/Condition'
+import List from './components/List/list'
+//import Condition from './components/ConditionalRendering/Condition'
 // import Button from './components/Event/Event';
 // import Composition from './components/Props/composition';
 // import Extraction from './components/Props/Extaction/extraction';
@@ -11,14 +12,18 @@ import Condition from './components/ConditionalRendering/Condition'
 function App() {
   return (
     <div className="App">
-      <Condition />
+      <List />
+      {/* <Condition /> */}
       {/* <Button/> */}
       {/* <ClassComponent2/> */}
       {/* <FunctionalComponent/> */}
       {/* <ClassComponent /> */}
       {/* <Composition / > */}
       {/* <Extraction/> */}
+
     </div>
+
+    
   );
 }
 
