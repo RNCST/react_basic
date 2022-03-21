@@ -1,6 +1,8 @@
 
 import './App.css';
-import List from './components/List/list'
+import ControlledComponent from './components/Form/ControlledComponent'
+import UncontrolledComponent from './components/Form/UncontrolledComponent';
+// import List from './components/List/list'
 //import Condition from './components/ConditionalRendering/Condition'
 // import Button from './components/Event/Event';
 // import Composition from './components/Props/composition';
@@ -12,7 +14,9 @@ import List from './components/List/list'
 function App() {
   return (
     <div className="App">
-      <List />
+      <UncontrolledComponent />
+      <ControlledComponent />
+      {/* <List /> */}
       {/* <Condition /> */}
       {/* <Button/> */}
       {/* <ClassComponent2/> */}
